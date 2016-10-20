@@ -25,7 +25,7 @@ q = "CREATE TABLE courses (code TEXT, id INTEGER, mark INTEGER)"
 c.execute(q)
 
 for i in coursesDict:
-    c.execute("INSERT INTO courses VALUES('"+i["code"]+"',"+ i["mark"]+ ","+i["id"]+")")
+    c.execute("INSERT INTO courses VALUES('"+i["code"]+"',"+ i["id"]+ ","+i["mark"]+")")
 
 #==========================================================
 db.commit() #save changes
